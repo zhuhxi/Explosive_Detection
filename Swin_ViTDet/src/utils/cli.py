@@ -1,0 +1,25 @@
+
+import argparse
+def get_common_parser(model_name: str):
+    p = argparse.ArgumentParser(f"{model_name} for explosive detection (COCO)")
+    p.add_argument("--data-root", type=str, required=True, help="Path to explosive_dataset_coco root")
+    p.add_argument("--ann-train", type=str, default="annotations/train.json")
+    p.add_argument("--ann-val", type=str, default="annotations/val.json")
+    p.add_argument("--ann-test", type=str, default="annotations/test.json")
+    p.add_argument("--img-train", type=str, default="train")
+    p.add_argument("--img-val", type=str, default="val")
+    p.add_argument("--img-test", type=str, default="test")
+    p.add_argument("--epochs", type=int, default=30)
+    p.add_argument("--batch-size", type=int, default=2)
+    p.add_argument("--lr", type=float, default=5e-4)
+    p.add_argument("--weight-decay", type=float, default=1e-4)
+    p.add_argument("--num-workers", type=int, default=4)
+    p.add_argument("--clip-grad", type=float, default=1.0)
+    p.add_argument("--amp", action="store_true", help="enable mixed precision")
+    p.add_argument("--resume", type=str, default="", help="path to checkpoint to resume")
+    p.add_argument("--output-dir", type=str, default="outputs")
+    p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--test-only", action="store_true", help="only run evaluation on the test set")
+    p.add_argument("--vis-examples", type=int, default=0, help="visualize N test examples after evaluation")
+    p.add_argument("--fixed-size", type=int, default=896, help="letterbox to SxS; Swin requires fixed img_size")
+    return p

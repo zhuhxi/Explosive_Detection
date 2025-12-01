@@ -1,0 +1,7 @@
+epochs: 30
+batch_size: 2
+lr: 0.0005
+weight_decay: 0.0001
+backbone: swin_tiny_patch4_window7_224
+amp: true
+fixed_size: 896
