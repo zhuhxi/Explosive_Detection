@@ -39,9 +39,7 @@ CUDA_VISIBLE_DEVICES=1 python tools/train.py \
 ## 1️⃣ Base Training on VOC Split1 (Train Only Base Classes)
 
 ```bash
-CUDA_VISIBLE_DEVICES=1 \
-python tools/detection/train.py configs/detection/tfa/voc/split1/tfa_r101_fpn_voc-split1_base-training.py \
---gpus 1
+CUDA_VISIBLE_DEVICES=1 python tools/detection/train.py configs/detection/fsce/voc/split1/fsce_r101_fpn_voc-split1_base-training.py --gpus 1
 ```
 
 ---
