@@ -1,5 +1,7 @@
 # 🔥 DINO Training Experiment Summary
 
+The dataset download link is provided at https://kuacae-my.sharepoint.com/:f:/g/personal/100065148_ku_ac_ae/Eu3jYuhl_WlAhPSGQc7HOCMBzlWmYt2SvKI8jzZNEyPTTQ?e=1sIRdy; after downloading, simply place the dataset inside the data/ directory.
+
 ## 1️⃣ Training on the Full Test Set (Simple + Occlusion)
 
 Train DINO on the complete explosive dataset, including both Simple and Occlusion scenarios:
