@@ -1,4 +1,6 @@
-# 📘 Experimental Devices, Dataset, and Model Summary (English · Markdown)
+# 📘 Experimental Devices, Dataset, and Model Summary
+The dependencies for DINO are listed in `mmdetection_requirements`, and those for the few-shot experiments are listed in `fewshot_requirements.txt`; it is recommended to create two separate environments.
+
 
 ## 🖥️ Experimental Device
 
